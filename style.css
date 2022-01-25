@@ -1,0 +1,134 @@
+a[target="_blank"]{
+    font-size: 30px;
+
+}
+
+
+h1 {
+    font-size: 5em;
+}
+h1::before{
+    content: "CSS Selectors";
+    position: absolute;
+    
+    transition: all 0.7s;
+}
+
+h1:hover::before {
+    transform: scale(1.1);
+    opacity: 0;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: goldenrod;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 2px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px){
+   .sidenav {padding-top: 15px;}
+   .sidenav a {font-size: 18px;}
+    
+}
+
+a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-flow:column;
+}
+.header h1, h2 {
+            width:auto;
+            text-align: center;
+           }
+           
+       .header h1 {
+            background-color: rgba(218, 165, 32, 0.8);
+            margin: 5px;
+        }
+       .header h2 {
+            margin: 20px;
+            color: goldenrod;
+            background-color: rgba(0, 0, 0, 0.8);
+           }
+
+.content-table {
+    font-family: Helvetica;
+    border-collapse:collapse;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 5px 5px;
+    overflow: hidden;
+    box-shadow: -5px 5px 14px black;
+    margin: auto;    
+}
+
+.content-table thead tr {
+    background-color: goldenrod;
+    font-size: 1.5em;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+.content-table td {
+    padding: 12px 15px;
+}
+.content-table th {
+    padding: 5px 5px;
+}
+
+.content-table tbody tr {
+    border-bottom: 0.5px solid black;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: lightgoldenrodyellow;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 0px;
+}
+
+.content-table tbody tr td {    
+    border-right: 0.3px solid black;
+}
+
+tbody tr td:last-child {
+    border: 0;
+  }
+
+
+
